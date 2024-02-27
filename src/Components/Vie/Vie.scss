@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap");
+root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --normallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+@media screen and (max-width:767px) {
+    .vie{
+      display: none;
+    }
+}
+.vie {
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+    margin-top: 1%; 
+    overflow: hidden; 
+    .titlevie {
+        background-image: url("bg_title_vieScolaire.png");
+        background-repeat: no-repeat;
+        
+        font-size: 20px;
+        text-align: right;
+        width: 100%;
+       
+        /* padding: 0px 30px; */
+        color: #fff;
+        h1 {
+            margin-right: 20%;
+          }
+        
+      }
+    h4{
+        position: relative;
+    font-size: 30px;
+    
+    
+    margin: 0px auto;
+    
+    text-align: left;
+    flex: 1;
+    margin-left: -30px;
+    color: #ffff;
+    }
+    .highlight {
+        color: #0E3552; /* Changer la couleur des caractères mis en évidence */
+      }
+    .line1 {
+        padding-left: 3%;
+
+        .slider1 {
+            background-image: url("sport.png");
+            background-repeat: no-repeat;
+            background-size: 90%;
+             
+            
+            padding: 200px 0px;
+            
+           
+          }
+        .slider2 {
+            background-image: url("culturelles.png");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            padding: 200px 0px; 
+            
+          }  
+        
+          .slider3 {
+            background-image: url("extra.png");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            padding: 200px 0; 
+            margin-right: 50%;
+          }  
+        
+          .slider4 {
+            background-image: url("activite_slider.png");
+            background-repeat: no-repeat;
+            
+            padding: 200px 0;
+            background-size: 80%  74%;
+            border-radius: 10% 10% 30% 30%;
+          }  
+      } 
+    .line2 {
+        margin-top: -100px;
+        padding-left: 2%;
+
+        .slider5 {
+            background-image: url("sorties_slider_.png");
+            background-repeat: no-repeat;
+            background-size: 80% 77%;
+            padding: 200px 0; 
+          }  
+          .slider6 {
+            background-image: url("voyage_slider.png");
+            background-repeat: no-repeat;
+            background-size: 90%; 
+            padding: 200px 0; 
+          } 
+          .slider7 {
+            background-image: url("summer_slider.png");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            padding: 200px 0; 
+          } 
+          .slider8 {
+            background-image: url("robotique.png");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            padding: 200px 0; 
+          } 
+     
+
+
+      } 
+
+  }

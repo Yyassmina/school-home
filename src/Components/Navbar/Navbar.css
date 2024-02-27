@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --normallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0rem 1rem;
+  border-bottom: 1.5px;
+  -webkit-backdrop-filter: blur 5px;
+          backdrop-filter: blur 5px;
+}
+.navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navBar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.navBar ul li:hover {
+  border: 1rem;
+  background: #F1C40F;
+  color: #fff;
+}
+.navBar button {
+  background-color: #F1C40F;
+  color: #fff;
+  border-radius: 5rem;
+}
+.navBar .logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navBar .signUpBtn {
+  background-color: #F1C40F;
+  color: #fff;
+  border-radius: 1rem;
+}
+.navBar .signUpBtn:hover {
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #003759;
+}
+@media screen and (max-width: 767px) {
+  .navBar .nav {
+    position: absolute;
+    display: flex;
+    width: 70%;
+    top: -100%;
+    right: 50%;
+    left: 50%;
+    z-index: 1000;
+    background: #fff;
+    transform: translate(-50%);
+    padding: 0rem;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 0 2px 3px 4px #b6b5b2;
+  }
+  .navBar .nav li {
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    padding: 1rem 5rem;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+  }
+  .navBar .nav li:hover {
+    background-color: #fff;
+    color: #F1C40F;
+    border-bottom: 1.5rem solid var(--primaryColor);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navBar .navIcon {
+    display: none;
+  }
+  .navBar .navIcon, .navBar .closeIcon {
+    display: none;
+    font-size: var(--h1FontSize);
+  }
+  .navBar .navIcon:hover, .navBar .closeIcon:hover {
+    color: #003759;
+  }
+}
+.navBar .navIcon, .navBar .closeIcon {
+  font-size: var(--h1FontSize);
+}
+.navBar .navIcon:hover, .navBar .closeIcon:hover {
+  color: #003759;
+}
+.navBar .closeIcon {
+  position: absolute;
+  bottom: -15px;
+  right: 50%;
+  left: 50%;
+  color: #F1C40F;
+  transform: translate(-50%);
+}
+.navBar .showNavbar {
+  top: 8rem;
+}/*# sourceMappingURL=Navbar.css.map */

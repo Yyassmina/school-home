@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap');
+root {
+    --primaryColor: hsl(14, 90%, 53%);
+    --primaryColorLight: hsl(14, 96%, 91%);
+    --bgColor: hsl(0, 0%, 100%);
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, 12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+    // font typo
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --normallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+}
+@media screen and (min-width:1000px) {
+.middle { 
+  overflow: hidden;
+  display: flex;
+ height: 100vh;
+ margin-top: 8%;
+ .part  {
+  background-color: #073D6A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 60%; /* Adjust the width as needed */   
+  p {
+    flex: 1;
+    margin-left: 20%;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    width: 100%;
+  }
+  button {
+    background-color: #073D6A;
+    color: #F1C40F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ 
+  .direct{
+    .imgmiddle{
+      display: none;
+    }
+    .play {
+      position: absolute;
+      // top: 20%;
+      left: 10%;
+      
+      // transform: translate(-50%, -50%);
+      // background: #F1C40F; /* Fond semi-transparent pour le bouton */
+      padding: 10px 10px; /* Ajustez selon vos besoins */
+      color: #fff; /* Couleur du texte */
+      text-decoration: none; /* Supprime le soulignement par défaut */
+      border-radius: 5px; /* Coins arrondis */
+      .icon {
+        width: 30px; 
+        height: auto; 
+        margin-right: 10px; 
+      }
+  }
+  }
+}
+.direct1{
+  .imgmiddle {
+    flex: 1;
+    padding: 30px ;
+    margin-left: -150px;
+  }
+  
+  
+}
+
+}  
+}
+@media screen and (max-width:767px) {
+.middle {
+  width: 100%;
+  background: #073D6A;
+  border-radius: 2rem;
+    .part p{
+      position: absolute;
+      text-align: center;
+      line-height: 2rem;
+      align-items: center;
+      left: 15%;
+      justify-content: center; 
+      height: 100%;
+      margin-top: 10px;
+      color: #fff;
+        button {
+      background-color: #073D6A;
+      color: #F1C40F;
+      border: none;
+    // padding: 10px 20px;
+      font-size: 1rem;
+       cursor: pointer;
+      }}
+  .direct{
+    padding: 15rem 3rem 0rem 3rem;
+    position: relative;
+    
+
+    .play {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #F1C40F; /* Fond semi-transparent pour le bouton */
+      padding: 10px 20px; /* Ajustez selon vos besoins */
+      color: #fff; /* Couleur du texte */
+      text-decoration: none; /* Supprime le soulignement par défaut */
+      border-radius: 5px; /* Coins arrondis */
+  }
+    a{
+      color: #fff;
+    }
+    
+    .imgmiddle {
+      display: block;
+       
+    }
+    .icon {
+      color: #fff;
+      margin-top: -50rem;
+      // padding: 5rem  7.5rem;
+      width: 3rem; 
+      height: 1rem; 
+      display: block;
+      
+      margin: 0 auto;
+  }
+  } 
+  .direct1{
+    display: none;
+  }   
+  
+    
+}
+}

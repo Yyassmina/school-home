@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap");
+root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --normallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+@media screen and (max-width:767px) {
+  .choisir {
+    display: none;
+  }
+.carosel{
+    padding: 5rem;
+    background-color: #fff;
+    color: aliceblue;
+    height: 50vh;
+    
+    h2{
+        text-align: center;
+        // padding: 2rem 0rem;
+        padding-bottom: 1.5rem;
+        color:#123556;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    
+    .box{
+        background-color: #fff;
+        height: 300px;
+       padding-bottom: 0rem;
+       margin-bottom: -5rem;
+       p{
+        text-align: center;
+         font-size: 30px;
+         font-weight: 500;
+         justify-content: center;
+         margin-top: -25%;
+         color: #fff;
+       }
+       h3{
+        text-align: center;
+         font-size: 30px;
+         font-weight: 500;
+        
+        margin-top: -38%;
+        margin-left: 10%;
+       
+         color: #fff;
+         .icon{    
+            padding-top: 2rem;
+            width: 15vw;
+            height: 15vh;
+            color: #fff;
+            margin-top: 7%;
+            padding-right: 3rem;
+       }
+
+       }
+       
+    
+    }
+    
+    
+
+}
+}
+.totalraison{
+  @media screen and (min-width:1000px) {
+    .carosel{
+      display: none;
+    }
+  }
+
+.choisir {
+  background-image: url("bg_yellow_raison.png");
+  background-size: 100%;
+  padding: 0px;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+  overflow: hidden; 
+  // margin-top: -180px;
+  padding: 0% 0% 53% 0%;
+  /* padding-bottom: 53%; */
+  .milieu {
+      position: absolute;
+     display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center; 
+      /* margin-top: -10%; */
+      .vector3 {
+        position: absolute;
+        width: 5vw;
+        height: 15vh;
+        margin-left: -25%; 
+        }
+      .vector4 {
+        position: absolute;
+        margin-top: -7%;
+        margin-left: 300px;
+        width: 5vw;
+        height: 15vh;
+        }
+        h1 {
+          position: relative;
+          margin: 0;
+          font-size: 40px; 
+          color:#123556;
+          text-align: center;
+        }  
+        .imageRaison {
+          display: flex;
+          justify-content: center;
+          margin-left: 20%;
+          margin-top: -40px;
+          top: -100px;
+          height: 670px;
+          width: 800px;
+          
+         
+        }         
+  }   
+  .raison {
+      position: relative;
+      .raisonL {
+          position: relative;
+          font-size: 20px;
+          /* postionner un texte au centre de la partie gauche de la page */
+          top: 50%;
+          left: 0;
+          top: 150px;
+          width: 50%;
+          /* text en gras */
+          font-weight: bold; 
+          .p1 {
+              background-image: url("bgRaison1.png");
+              background-size: 100%;
+              background-repeat: no-repeat;
+              /* color: #073D6A; */
+              border: none;
+              width: 40%;
+              height: 50%;
+              padding: 10px 10px 20px 10px; 
+              display: flex; 
+              align-items: center; 
+              margin-left: 250px;
+              margin-top: 80px;
+              
+            }
+            .icon1 {
+              width: 50px; 
+              height: auto; 
+              margin-right: 15px; 
+              margin-left: 5px;
+            }
+            .raison1 {
+              color: #2A587F;
+              font-size: 16px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+              margin-left: 15px;
+              padding: 0px 0px;
+            }
+          
+          
+            .p2 {
+              background-image: url("bgraison2.png");
+              background-size: 100%;
+              background-repeat: no-repeat;
+              border: none;
+              width: 40%;
+              height: 50%;
+              padding: 10px 10px 20px 10px; 
+              display: flex; 
+              align-items: center; 
+              margin-left: 125px;
+              margin-top: 80px;
+              
+            }
+            .icon2 {
+              width: 50px; 
+              height: auto; 
+              margin-right: 15px; 
+              margin-left: 5px;
+            }
+            .raison2 {
+              color: #fff;
+              font-size: 16px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+              margin-left: 15px;
+              padding: 0px 0px;
+            }
+          
+          
+            .p3 {
+              background-image: url("bgraison3.png");
+              background-size: cover;
+              background-repeat: no-repeat;
+              border: none;
+              width: 50%;
+              height: 50%;
+              // padding: 10px 5px 10px 2px; 
+              padding: 1rem 1rem 0rem 1rem;
+              /* padding-right: 70px; */
+              display: flex; 
+              align-items: center; 
+              margin-left: 180px;
+              margin-top: 80px;
+              
+            }
+            .icon3 {
+              width: 50px; 
+              height: auto; 
+              margin-right: 0px; 
+              margin-left: 2px;
+            }
+            .raison3 {
+              color: #fff;
+              font-size: 16px;
+              margin-top: 0px;
+              margin-bottom: 2px;
+              text-align: center;
+              margin-left: 10px;
+              
+              padding: 0px 0px;
+            }
+          
+        }
+      .raisonR {
+          position: relative;
+          text-align: center;
+          font-size: 20px; 
+          /* positionner un texte au centre de la partie droite de la page */
+          top: 50%;
+          margin-top: 20px;
+          margin-left: 50%; 
+          text-align: center;
+          top: 0px;
+          width: 50%; 
+          font-weight: bold;
+          .p4 {
+              background-image: url("bgraison4.png");
+              background-size: 100%;
+              background-repeat: no-repeat;
+              border: none;
+              width: 50%;
+              height: 50%;
+              padding: 2rem 1rem 2rem 1rem;
+              display: flex; 
+              align-items: center; 
+              margin-left: 160px;
+              margin-top: -280px;
+              
+            }
+            .icon4 {
+              width: 50px; 
+              height: auto; 
+              margin-right: 5px; 
+              margin-left: 10px;
+            }
+            .raison4 {
+              color: #fff;
+              font-size: 16px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+              margin-left: 15px;
+              padding: 0px 0px;
+            }
+          
+            .p5 {
+              background-image: url("bgraison5.png");
+              background-size: 100%;
+              background-repeat: no-repeat;
+              border: none;
+              width: 40%;
+              height: 50%;
+              padding: 10px 10px 20px 10px; 
+              display: flex; 
+              align-items: center; 
+              margin-left: 300px;
+              margin-top: 70px;
+              
+            }
+            .icon5 {
+              width: 50px; 
+              height: auto; 
+              margin-right: 15px; 
+              margin-left: 5px;
+            }
+            .raison5 {
+              color: #fff;
+              font-size: 16px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+              margin-left: 15px;
+              padding: 0px 0px;
+            }
+          
+            .p6 {
+              background-image: url("bgraison6.png");
+              background-size: 100%;
+              background-repeat: no-repeat;
+              border: none;
+              width: 40%;
+              height: 50%;
+              padding: 10px 10px 20px 10px; 
+              display: flex; 
+              align-items: center; 
+              margin-left: 250px;
+              margin-top: 80px;
+              
+            }
+            .icon6 {
+              width: 50px; 
+              height: auto; 
+              margin-right: 15px; 
+              margin-left: 5px;
+            }
+            .raison6 {
+              color: #fff;
+              font-size: 16px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              text-align: center;
+              margin-left: 15px;
+              padding: 0px 0px;
+            }
+        }  
+      
+    } 
+}
+}

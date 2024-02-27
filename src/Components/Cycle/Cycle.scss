@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap");
+root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --normallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+
+    @media screen and (max-width:767px) {
+       .cycle{
+       padding-top: 85%;
+       justify-content: center;
+       .titlecycle{
+        .vect1,.vect2{
+            display: none;
+        }
+       }
+       .slider{
+        h3{
+           display: none;
+        }
+        .cycle1,.cycle2,.cycle3,.cycle4{
+            &:hover h3 {
+                position: absolute; 
+                bottom: 20%;
+            }
+            &::before {
+                display: none;
+            }
+            &:hover::before {
+                display: none;
+            }
+           
+
+        }
+       }
+       }
+           
+           
+    }
+   
+   
+
+.cycle {
+    margin-top: 65%;
+    .titlecycle {
+        position: absolute;
+       display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center; 
+        /* margin-top: -10%; */
+        position: absolute;
+        margin-top: -10%;
+        .vect1 {
+            position: absolute;
+            width: 5vw;
+            height: 15vh;
+            margin-left: -25%;   
+          }
+          .vect2 {
+            position: absolute;
+            margin-top: -6%;
+            margin-left: 300px;
+            width: 5vw;
+            height: 15vh;
+          }
+          h1 {
+            position: relative;
+            margin: 0;
+            font-size: 60px; 
+            color:#123556;
+            text-align: center;
+          }
+        }
+        .slider {
+            border-radius: 0px;
+            h3 {
+                position: relative;
+                font-size: 40px;
+                display: flex;
+                border-radius: 5px;
+                margin: 0px auto;
+                font-family: sans-serif;
+                margin: 0 15px;
+                color: #fff;
+                border-radius: 0px; 
+              }
+            .cycle1 {
+                background-image: url("early.png");
+                padding: 200px 0;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0%;
+                    width: 25%;
+                    height: 99%;
+                    background-color: rgba(0, 0, 255, 0.2); /* Vert semi-transparent */
+                }
+                h3 {
+                    position: absolute; 
+                    bottom: 20px; /* Place le texte en bas */  
+                }
+                &:hover::before {
+                    /* background-color: rgba(139, 135, 135, 0.37); */
+                    background-color: transparent; 
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"; 
+                    
+                    padding: 300px 20px ; 
+                    color: #fff; 
+                    font-size: 16px; 
+                    line-height: 1.5; 
+                }
+                &:hover h3 {
+                    position: absolute; 
+                    bottom: 30%;
+                }
+            }
+            .cycle2 {
+                background-image: url("primary.png");
+                padding: 200px 0;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 25%;
+                    width: 25%;
+                    height: 99%;
+                    background-color: rgba(255, 0, 0, 0.2); 
+                }
+                h3 {
+                    position: absolute; 
+                    bottom: 20px;  
+                }
+                &:hover::before  {
+                    /* background-color: rgba(139, 135, 135, 0.37); */
+                    background-color: transparent; 
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"; 
+                    
+                    padding: 300px 20px ; /* Ajoutez un peu de marge intérieure pour le texte */
+                    color: #fff; /* Couleur du texte */
+                    font-size: 16px; /* Taille de la police */
+                    line-height: 1.5; /* Hauteur de ligne */
+                  }
+                &:hover h3 {
+                  position: absolute; 
+                  bottom: 30%;
+                }
+                
+            }
+            .cycle3 {
+                background-image: url("secondary.png");
+                padding: 200px 0;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    width: 25%;
+                    height: 99%;
+                    background-color: rgba(0, 255, 0, 0.2); 
+                  }
+                h3 {
+                    position: absolute;
+                    bottom: 20px;  
+                }
+                &:hover::before {
+                    background-color: transparent; /* Supprime le filtre de couleur lors du survol */
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"; 
+                   
+                    padding: 300px 20px ; 
+                    color: #fff; /* Couleur du texte */
+                    font-size: 16px; /* Taille de la police */
+                    line-height: 1.5; /* Hauteur de ligne */
+                  }
+                &:hover h3 {
+                  position: absolute; 
+                  bottom: 30%;
+                }
+                
+            }
+            .cycle4 {
+                background-image: url("upper.png");
+                padding: 200px 0;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 75%;
+                    width: 25%;
+                    height: 99%;
+                    background-color: rgba(255, 0, 212, 0.199); /* Vert semi-transparent */
+                  }
+                h3 {
+                    position: absolute; /* Permet un positionnement absolu */
+                    bottom: 20px; /* Place le texte en bas */  
+                  }
+                &:hover::before {
+                    background-color: transparent; /* Supprime le filtre de couleur lors du survol */
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"; /* Ajoutez le texte souhaité */
+                    padding: 300px 20px; /* Ajoutez un peu de marge intérieure pour le texte */
+                    color: #fff; /* Couleur du texte */
+                    font-size: 16px; /* Taille de la police */
+                    line-height: 1.5; /* Hauteur de ligne */
+                  }
+                &:hover h3 {
+                  position: absolute; 
+                  bottom: 30%;
+                }
+            }
+            
+          }
+}

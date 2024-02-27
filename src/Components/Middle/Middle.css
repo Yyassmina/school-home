@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap");
+root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --normallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .middle {
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    margin-top: 8%;
+  }
+  .middle .part {
+    background-color: #073D6A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 60%; /* Adjust the width as needed */
+  }
+  .middle .part p {
+    flex: 1;
+    margin-left: 20%;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    width: 100%;
+  }
+  .middle .part button {
+    background-color: #073D6A;
+    color: #F1C40F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .middle .part .direct .imgmiddle {
+    display: none;
+  }
+  .middle .part .direct .play {
+    position: absolute;
+    left: 10%;
+    padding: 10px 10px; /* Ajustez selon vos besoins */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  .middle .part .direct .play .icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .middle .direct1 .imgmiddle {
+    flex: 1;
+    padding: 30px;
+    margin-left: -150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .middle {
+    width: 100%;
+    background: #073D6A;
+    border-radius: 2rem;
+  }
+  .middle .part p {
+    position: absolute;
+    text-align: center;
+    line-height: 2rem;
+    align-items: center;
+    left: 15%;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+    color: #fff;
+  }
+  .middle .part p button {
+    background-color: #073D6A;
+    color: #F1C40F;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .middle .direct {
+    padding: 15rem 3rem 0rem 3rem;
+    position: relative;
+  }
+  .middle .direct .play {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F1C40F; /* Fond semi-transparent pour le bouton */
+    padding: 10px 20px; /* Ajustez selon vos besoins */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  .middle .direct a {
+    color: #fff;
+  }
+  .middle .direct .imgmiddle {
+    display: block;
+  }
+  .middle .direct .icon {
+    color: #fff;
+    margin-top: -50rem;
+    width: 3rem;
+    height: 1rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .middle .direct1 {
+    display: none;
+  }
+}/*# sourceMappingURL=Middle.css.map */

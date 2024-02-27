@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&display=swap");
+root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --normallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.Bac {
+  /* padding: 0px;  */
+  padding-bottom: 20%;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 25%;
+  background-image: url("bg_bac.png");
+  background-repeat: no-repeat;
+}
+.Bac p {
+  color: #004491;
+  font-size: 20px;
+  margin-top: -25%;
+  margin-left: 50%;
+  font-weight: bold;
+}
+.Bac img {
+  padding: 0px;
+  width: 40vw;
+  height: 50vh;
+  position: relative;
+  margin-top: 13%;
+  margin-left: 4%;
+}
+.Bac .titlebac h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #123556;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+}
+.Bac .titlebac h1 .motU {
+  color: #F1C40F;
+}
+.Bac .titlebac h1 .motT {
+  background-color: #123556;
+  color: #fff;
+  padding-right: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .Bac {
+    display: none;
+  }
+}/*# sourceMappingURL=Bac.css.map */
