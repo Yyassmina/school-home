@@ -84,7 +84,8 @@ root {
   position: relative;
   
   &:hover {
-    background-image: url("HoverText_notreChorte.png");
+    background-image: url("HoverText.png");
+    cursor: pointer;
     background-size: 50% auto;
     background-repeat: no-repeat;
     padding: 0;
