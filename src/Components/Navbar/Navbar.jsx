@@ -24,13 +24,13 @@ const Navbar = () => {
       </div>
       <div className={navBar}>
       <ul>
-                 <li className='navList'>Accueil</li>
-                <li className='navList'>Notre École</li>
-                <li className='navList'>Académique</li>
-                <li className='navList'>Admissions</li>
-                <li className='navList'>Vie Scolaire</li>
-                <li className='navList'>Actualités</li>
-                <li className='navList'>Contactez nous</li>
+      <li className='navlist'><a href="./Accueil.js">Accueil</a></li>
+      <li className='navList'><a href="/Notre École">Notre École</a></li>
+      <li className='navList'><a href="/Académique">Académique</a></li>
+      <li className='navList'><a href="/Admissions">Admissions</a></li>
+      <li className='navList'><a href="/Vie Scolaire">Vie Scolaire</a></li>
+      <li className='navList'><a href="/Actualités">Actualités</a></li>
+      <li className='navList'><a href="/Contactez nous">Contactez nous</a></li>
                 
             </ul>
             {/* icon remove navbar */}
